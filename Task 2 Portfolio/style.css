@@ -1,0 +1,134 @@
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+    --primary-color: #007bff;
+    --card-bg: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+#skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+
+#skills li {
+    background-color: var(--card-bg);
+    padding: 0.75rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--shadow);
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+blockquote footer {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #555;
+}
+
+form {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 -2px 5px var(--shadow);
+    margin-top: 2rem;
+}
